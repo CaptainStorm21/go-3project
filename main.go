@@ -11,8 +11,9 @@ func main() {
 					func(
 					w http.ResponseWriter,
 					r *http.Request) {
-		names := r.URL.Query()["name"];
-		var name string;
+
+		names := r.URL.Query()["name"]
+		var name string
 		if len(names) == 1{
 			name = names[0]
 		}
